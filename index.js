@@ -21,5 +21,7 @@ app.get('/', (req, res) => {
       res.render('pages/index', { data: data.articles[0], cool: process.env.SECRET })
     })
 })
-
+app.get('/as', (req, res) => {
+  res.send(`<h1>hello world</h1>`)
+})
 
